@@ -302,9 +302,12 @@ img {
   margin-bottom: 10px;
   width: 100%;
   height: 40px;
+  padding: 12px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form .comments-input {
   display: block;
@@ -317,6 +320,8 @@ img {
   border-radius: 4px;
 
   resize: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .order-form .comments-input::placeholder {
   font-weight: 400;
@@ -340,13 +345,41 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  
   font-weight: 700;
   font-size: 1.875;
-  line-height: 30px;  
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
 }
+.order-form .form-item {
+  position: relative;
+}
+
+.order-form .icon {
+  position: absolute;
+  top: 75%;
+  left: 12px;
+  transform: translateY(-75%);
+
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus,
+.form-input:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transform: border;
+}
+.form-input:focus + .icon,
+.form-input:hover + .icon {
+  fill: rgba(33, 150, 243, 1);
+  transform: fill;
+}
+.comments-input:focus,
+.comments-input:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transform: border;
+}
+
 /* ------------- Benefits section --------- */
 
 .benefits-title {
@@ -657,7 +690,7 @@ img {
   margin-bottom: 20px;
 }
 
-.email-sub-form .label{
+.email-sub-form .label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -670,9 +703,7 @@ img {
 .email-sub-form .input {
   width: 358px;
   height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
+  padding: 15px 16px;
 
   background-color: transparent;
   color: #fff;
@@ -682,9 +713,9 @@ img {
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
-.email-sub-form .input:hover {
+.email-sub-form .input:hover,
+.email-sub-form .input:focus {
   border: 1px solid rgba(33, 150, 243, 1);
   transform: border;
 }
@@ -703,7 +734,6 @@ img {
   border-radius: 4px;
   border: 0;
 
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -712,8 +742,6 @@ img {
   cursor: pointer;
 }
 .email-sub-form .sub-icon {
-  width: 24px;
-  height: 24px;
   margin-left: 10px;
 }
 

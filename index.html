@@ -73,20 +73,29 @@
                 <div role="group" class="form-item">
                   <label for="name" class="form-label">Ім'я</label>
                   <input class="form-input" type="text" name="name" name id="name" />
+                  <svg width="18" height="18" class="icon">
+                    <use href="./images/icons.svg#icon-person-form"></use>
+                  </svg>
                 </div>
-                <div role="group" class="item">
+                <div role="group" class="form-item">
                   <label for="phone" class="form-label">Телефон</label>
                   <input class="form-input" type="tel" name="tel" name id="phone" />
+                  <svg width="18" height="18" class="icon">
+                    <use href="./images/icons.svg#icon-phone-form"></use>
+                  </svg>
                 </div>
-                <div role="group" class="item">
+                <div role="group" class="form-item">
                   <label for="email" class="form-label">Пошта</label>
                   <input class="form-input" type="email" name="email" name id="email" />
+                  <svg width="18" height="18" class="icon">
+                    <use href="./images/icons.svg#icon-email-form"></use>
+                  </svg>
                 </div>
-                <div role="group" class="item">
+                <div role="group" class="form-item">
                   <label for="comments" class="form-label">Коментар</label>
                   <textarea class="comments-input" name="comments" name id="comments" placeholder="Введіть текст"/></textarea>
                 </div>
-                <div role="group" class="item">
+                <div role="group" class="form-item">
                   <input class="" type="checkbox" name="terms" name id="checkbox" />
                   <label for="checkbox" class="">Погоджуюся з розсилкою та приймаю Умови договору</label>                  
                 </div>
@@ -502,11 +511,10 @@
               placeholder="E-mail"
             />
             <button type="submit" class="btn">Підписатися
-              <svg class="sub-icon">
+              <svg class="sub-icon" width="24"
+                  height="24">
                 <use
-                  href="./images/icons.svg#icon-emailsubscribe"
-                  width="24"
-                  height="24"
+                  href="./images/icons.svg#icon-emailsubscribe"       
                 ></use>
               </svg>
             </button>
