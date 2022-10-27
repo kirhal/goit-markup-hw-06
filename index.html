@@ -69,28 +69,28 @@
               <span class="modal-title"
                 >Залиште свої дані, ми вам передзвонимо</span
               >
-              <form action="">
-                <div role="group">
-                  <label for="name" class="">Ім'я</label>
-                  <input class="" type="text" name=" name id="name" />
+              <form action="" class="order-form">
+                <div role="group" class="form-item">
+                  <label for="name" class="form-label">Ім'я</label>
+                  <input class="form-input" type="text" name="name" name id="name" />
                 </div>
-                <div role="group">
-                  <label for="phone" class="">Телефон</label>
-                  <input class="" type="tel" name=" name id="phone" />
+                <div role="group" class="item">
+                  <label for="phone" class="form-label">Телефон</label>
+                  <input class="form-input" type="tel" name="tel" name id="phone" />
                 </div>
-                <div role="group">
-                  <label for="email" class="">Пошта</label>
-                  <input class="" type="email" name=" name id="email" />
+                <div role="group" class="item">
+                  <label for="email" class="form-label">Пошта</label>
+                  <input class="form-input" type="email" name="email" name id="email" />
                 </div>
-                <div role="group">
-                  <label for="comments" class="">Коментар</label>
-                  <textarea class="" rows="5" name=" name id="comments" /></textarea>
+                <div role="group" class="item">
+                  <label for="comments" class="form-label">Коментар</label>
+                  <textarea class="comments-input" name="comments" name id="comments" placeholder="Введіть текст"/></textarea>
                 </div>
-                <div role="group">
-                  <input class="" type="checkbox" name=" name id="checkbox" />
+                <div role="group" class="item">
+                  <input class="" type="checkbox" name="terms" name id="checkbox" />
                   <label for="checkbox" class="">Погоджуюся з розсилкою та приймаю Умови договору</label>                  
                 </div>
-                <button type="submit" class="">Відправити</button>
+                <button type="submit" class="btn">Відправити</button>
               </form>
             </div>
           </div>
@@ -500,8 +500,8 @@
               lang="en"
               placeholder="E-mail"
             />
-            <button type="submit" class="btn">
-              Підписатися<svg class="sub-icon">
+            <button type="submit" class="btn">Підписатися
+              <svg class="sub-icon">
                 <use
                   href="./images/icons.svg#icon-emailsubscribe"
                   width="24"
