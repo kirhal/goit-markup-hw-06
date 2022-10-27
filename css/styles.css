@@ -275,7 +275,14 @@ img {
 /* ------------- Benefits section --------- */
 
 .benefits-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .benefits-list {
   display: flex;
@@ -479,9 +486,14 @@ img {
   display: flex;
   align-items: baseline;
 }
-.container.footer > .item:not(:last-child) {
+.container.footer > .item:nth-child(1) {
+  width: 231px;
   margin-right: 70px;
 }
+.container.footer > .item:nth-child(2) {
+  margin-right: 93px;
+}
+
 .link.address {
   margin-bottom: 20px;
 
@@ -558,12 +570,45 @@ img {
 .studio-socials .icon {
   fill: #fff;
 }
+.item .subscribe-title {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #fff;
+
+  margin-bottom: 20px;
+}
+/* form[class="subscribe-form"] {
+  position: relative;
+} */
+label[class="email-subscribe"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ------------- Portfolio section ----------- */
 .section.portfolio {
   margin-top: 80px;
 }
 .portfolio-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .filter-list {
   display: flex;
