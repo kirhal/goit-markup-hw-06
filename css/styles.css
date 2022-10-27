@@ -348,6 +348,7 @@ img {
   height: 50px;
   align-items: center;
   margin-top: 30px;
+  cursor: pointer;
 
   background: #2196f3;
   color: #fff;
