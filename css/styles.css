@@ -570,7 +570,7 @@ img {
 .studio-socials .icon {
   fill: #fff;
 }
-.item .subscribe-title {
+.item .sub-title {
   display: inline-block;
 
   font-weight: 700;
@@ -586,7 +586,7 @@ img {
 /* form[class="subscribe-form"] {
   position: relative;
 } */
-label[class="email-subscribe"] {
+label[class="email-sub"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -596,6 +596,48 @@ label[class="email-subscribe"] {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+input[name="email-sub"] {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  background-color: transparent;
+  color: #fff;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.email-sub-form .btn {
+  display: inline-flex;
+
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #fff;
+  cursor: pointer;
+}
+.email-sub-form .sub-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 /* ------------- Portfolio section ----------- */
 .section.portfolio {
   margin-top: 80px;
