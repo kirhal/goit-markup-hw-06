@@ -496,13 +496,12 @@ img {
   align-items: baseline;
 }
 .container.footer > .item:nth-child(1) {
-  width: 231px;
-  margin-right: 70px;
+  
+  margin-right: 90px;
 }
 .container.footer > .item:nth-child(2) {
   margin-right: 93px;
 }
-
 .link.address {
   margin-bottom: 20px;
 
@@ -627,6 +626,7 @@ input[name="email-sub"] {
   height: 50px;
   justify-content: center;
   align-items: center;
+  margin-left: 12px;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
