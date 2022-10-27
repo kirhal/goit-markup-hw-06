@@ -248,6 +248,7 @@ img {
   left: calc(100% / 2 - 264px);
   overflow-y: auto;
 
+  color: #212121;
   background: #ffffff;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -270,6 +271,14 @@ img {
   border-radius: 50%;
 
   cursor: pointer;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 
 /* ------------- Benefits section --------- */
