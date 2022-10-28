@@ -31,7 +31,6 @@ ul {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid tomato; */
 }
 .link {
   text-decoration: none;
@@ -349,6 +348,7 @@ img {
   align-items: center;
   margin-top: 30px;
   cursor: pointer;
+  padding: 0;
 
   background: #2196f3;
   color: #fff;
@@ -384,9 +384,71 @@ img {
   fill: rgba(33, 150, 243, 1);
   transform: fill;
 }
+
 .comments-input:focus {
   border: 1px solid rgba(33, 150, 243, 1);
   transform: border;
+}
+.terms-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.terms-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.terms-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+.form-checkbox {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 20px;
+}
+.icon-checkbox {
+  position: absolute;
+  display: inline-flex;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+
+  fill: #fff;
+  background-color: #fff;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 200;
+}
+.terms-checkbox:checked + .icon-checkbox {
+  background-color: var(--focus-hover-collor);
+  background-origin: border-box;
+  border: none;
+  transform: background-color;
+}
+.terms-checkbox:focus + .icon-checkbox {
+  outline: 2px solid #2196f3;
 }
 
 /* ------------- Benefits section --------- */
