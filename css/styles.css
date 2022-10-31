@@ -436,7 +436,8 @@ img {
   border: 2px solid #212121;
   border-radius: 2px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .terms-checkbox:checked + .icon-checkbox {
   background-color: var(--focus-hover-collor);
@@ -445,12 +446,8 @@ img {
   transform: background-color;
 }
 .terms-checkbox:focus + .icon-checkbox {
-  /* outline: 2px solid #2196f3; */
-  
   background-origin: border-box;
-  border: 2px solid #2196f3;
-  
-  
+  border-color: #2196f3;
 }
 
 /* ------------- Benefits section --------- */
